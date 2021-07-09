@@ -19,7 +19,7 @@ import java.util.concurrent.ExecutionException;
 @Service
 public class ProductService {
 
-    public static final String COLLECTION_NAME="users";
+    public static final String COLLECTION_NAME="products";
 
     public String saveProductDetails(Product product) throws InterruptedException, ExecutionException {
         Firestore dbFirestore = FirestoreClient.getFirestore();
